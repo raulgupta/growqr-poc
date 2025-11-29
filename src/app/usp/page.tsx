@@ -89,14 +89,129 @@ export default function USP() {
         </div>
 
         {/* USP Summary Table */}
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-slate-200">
-          <div className="p-6 bg-linear-to-r from-indigo-50 to-purple-50 border-b border-slate-200">
-            <h2 className="text-2xl font-semibold text-slate-900 flex items-center gap-2">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-6 sm:mb-8 border border-slate-200">
+          <div className="p-4 sm:p-6 bg-linear-to-r from-indigo-50 to-purple-50 border-b border-slate-200">
+            <h2 className="text-xl sm:text-2xl font-semibold text-slate-900 flex items-center gap-2">
               📊 USP / Value Proposition Summary
             </h2>
-            <p className="text-sm text-slate-600 mt-2">Quick overview of core differentiators</p>
+            <p className="text-xs sm:text-sm text-slate-600 mt-2">Quick overview of core differentiators</p>
           </div>
-          <div className="overflow-x-auto">
+
+          {/* Mobile Card Layout */}
+          <div className="md:hidden p-4 space-y-4">
+            {/* USP 1 */}
+            <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-7 h-7 bg-indigo-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                <span className="font-semibold text-slate-900 text-sm">Single Living QR with Real-Time Q-Score</span>
+              </div>
+              <div className="space-y-2 text-xs text-slate-700">
+                <div>
+                  <span className="font-medium text-slate-900">Core Benefit:</span>
+                  <p className="mt-1">One scannable QR always shows the latest résumé, video intro, hero card, and a transparent 0–100 employability score — no outdated PDFs ever again</p>
+                </div>
+                <div>
+                  <span className="font-medium text-slate-900">Technical Edge:</span>
+                  <p className="mt-1">Cryptographically signed payload + hourly embedding refresh from user&apos;s digital twin in Pinecone + Google ADK agent</p>
+                </div>
+                <div>
+                  <span className="font-medium text-indigo-700">Audience:</span>
+                  <p className="mt-1">Job seekers, recruiters, networkers, conference attendees, students — literally everyone globally</p>
+                </div>
+              </div>
+            </div>
+
+            {/* USP 2 */}
+            <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-7 h-7 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                <span className="font-semibold text-slate-900 text-sm">Continuously Evolving Digital Twin</span>
+              </div>
+              <div className="space-y-2 text-xs text-slate-700">
+                <div>
+                  <span className="font-medium text-slate-900">Core Benefit:</span>
+                  <p className="mt-1">Your career agent learns from every edit, mock interview, job application, and skill practice; proactively improves your materials without you asking</p>
+                </div>
+                <div>
+                  <span className="font-medium text-slate-900">Technical Edge:</span>
+                  <p className="mt-1">Long-term memory in Pinecone vector DB + short-term session in Redis + Google ADK/LangGraph multi-agent system</p>
+                </div>
+                <div>
+                  <span className="font-medium text-purple-700">Audience:</span>
+                  <p className="mt-1">Mid-career professionals, career switchers, remote workers in 150+ countries who can&apos;t afford ongoing coaching</p>
+                </div>
+              </div>
+            </div>
+
+            {/* USP 3 */}
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+                <span className="font-semibold text-slate-900 text-sm">Multimodal Real-Time Video Coaching</span>
+              </div>
+              <div className="space-y-2 text-xs text-slate-700">
+                <div>
+                  <span className="font-medium text-slate-900">Core Benefit:</span>
+                  <p className="mt-1">Instant, unlimited practice for interviews, sales pitches, English fluency with filler-word detection, eye-contact scoring, and narrative advice</p>
+                </div>
+                <div>
+                  <span className="font-medium text-slate-900">Technical Edge:</span>
+                  <p className="mt-1">WebRTC + Whisper-live + GPT-4o-audio/vision pipeline running at &lt;800ms latency</p>
+                </div>
+                <div>
+                  <span className="font-medium text-blue-700">Audience:</span>
+                  <p className="mt-1">Non-native speakers, fresh graduates, sales & client-facing roles worldwide</p>
+                </div>
+              </div>
+            </div>
+
+            {/* USP 4 */}
+            <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-7 h-7 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+                <span className="font-semibold text-slate-900 text-sm">Market-Calibrated Matching & Intelligence</span>
+              </div>
+              <div className="space-y-2 text-xs text-slate-700">
+                <div>
+                  <span className="font-medium text-slate-900">Core Benefit:</span>
+                  <p className="mt-1">Matches you only to roles you have &gt;70% probability of passing ATS + recruiter screen; includes salary bands, layoff risk, funding data</p>
+                </div>
+                <div>
+                  <span className="font-medium text-slate-900">Technical Edge:</span>
+                  <p className="mt-1">Daily-updated job embeddings in Pinecone + pgvector hybrid + continuous scraping/enrichment mesh</p>
+                </div>
+                <div>
+                  <span className="font-medium text-green-700">Audience:</span>
+                  <p className="mt-1">Global talent in tech, finance, consulting, creative fields — especially in emerging markets with opaque job data</p>
+                </div>
+              </div>
+            </div>
+
+            {/* USP 5 */}
+            <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-7 h-7 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+                <span className="font-semibold text-slate-900 text-sm">Privacy-First, User-Owned Career Layer</span>
+              </div>
+              <div className="space-y-2 text-xs text-slate-700">
+                <div>
+                  <span className="font-medium text-slate-900">Core Benefit:</span>
+                  <p className="mt-1">You own and control all data & the QR; nothing is sold, no data broker middlemen, selective disclosure (full/partial/time-bound)</p>
+                </div>
+                <div>
+                  <span className="font-medium text-slate-900">Technical Edge:</span>
+                  <p className="mt-1">End-to-end encryption + user-controlled disclosure keys + zero-knowledge score calculation + exportable twin state</p>
+                </div>
+                <div>
+                  <span className="font-medium text-orange-700">Audience:</span>
+                  <p className="mt-1">Privacy-conscious professionals, executives, gig workers, digital nomads, Gen-Z entering the workforce globally</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Table Layout */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full">
               <thead className="bg-slate-50">
                 <tr>
@@ -112,7 +227,7 @@ export default function USP() {
                   <td className="px-6 py-4 text-sm font-bold text-indigo-600">1</td>
                   <td className="px-6 py-4 text-sm font-medium text-slate-900">Single Living QR with Real-Time Q-Score</td>
                   <td className="px-6 py-4 text-sm text-slate-700">One scannable QR always shows the latest résumé, video intro, hero card, and a transparent 0–100 employability score — no outdated PDFs ever again</td>
-                  <td className="px-6 py-4 text-sm text-slate-700">Cryptographically signed payload + hourly embedding refresh from user's digital twin in Pinecone + Google ADK agent</td>
+                  <td className="px-6 py-4 text-sm text-slate-700">Cryptographically signed payload + hourly embedding refresh from user&apos;s digital twin in Pinecone + Google ADK agent</td>
                   <td className="px-6 py-4 text-sm text-slate-700">Job seekers, recruiters, networkers, conference attendees, students — literally everyone globally</td>
                 </tr>
                 <tr className="hover:bg-slate-50">
@@ -120,7 +235,7 @@ export default function USP() {
                   <td className="px-6 py-4 text-sm font-medium text-slate-900">Continuously Evolving Digital Twin</td>
                   <td className="px-6 py-4 text-sm text-slate-700">Your career agent learns from every edit, mock interview, job application, and skill practice; proactively improves your materials without you asking</td>
                   <td className="px-6 py-4 text-sm text-slate-700">Long-term memory in Pinecone vector DB + short-term session in Redis + Google ADK/LangGraph multi-agent system</td>
-                  <td className="px-6 py-4 text-sm text-slate-700">Mid-career professionals, career switchers, remote workers in 150+ countries who can't afford ongoing coaching</td>
+                  <td className="px-6 py-4 text-sm text-slate-700">Mid-career professionals, career switchers, remote workers in 150+ countries who can&apos;t afford ongoing coaching</td>
                 </tr>
                 <tr className="hover:bg-slate-50">
                   <td className="px-6 py-4 text-sm font-bold text-blue-600">3</td>
@@ -146,8 +261,8 @@ export default function USP() {
               </tbody>
             </table>
           </div>
-          <div className="p-4 bg-slate-50 border-t border-slate-200">
-            <p className="text-sm text-slate-600 italic">
+          <div className="p-3 sm:p-4 bg-slate-50 border-t border-slate-200">
+            <p className="text-xs sm:text-sm text-slate-600 italic">
               These five are the non-negotiable differentiators that work the same whether the user is a software engineer in San Francisco,
               a marketing manager in Lagos, or a recent graduate in Jakarta.
             </p>

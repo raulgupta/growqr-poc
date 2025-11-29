@@ -5,29 +5,29 @@ export default function BlueprintPage() {
     <div className="min-h-screen bg-linear-to-br from-slate-50 to-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Page Header */}
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">
+        <div className="mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-4xl font-bold text-slate-900 mb-2">
             GrowQR System Blueprint
           </h1>
-          <p className="text-lg text-slate-600">
+          <p className="text-base sm:text-lg text-slate-600">
             Distributed Microservices Architecture - Python FastAPI Backend
           </p>
         </div>
 
         {/* Architecture Overview */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border border-slate-200">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-6">
+        <div className="bg-white rounded-xl shadow-lg p-4 sm:p-8 mb-6 sm:mb-8 border border-slate-200">
+          <h2 className="text-xl sm:text-2xl font-semibold text-slate-900 mb-4 sm:mb-6">
             System Architecture Overview
           </h2>
 
           {/* Visual Architecture Diagram */}
-          <div className="bg-slate-50 rounded-lg p-6 mb-6 border border-slate-200 overflow-x-auto">
-            <div className="min-w-[900px]">
+          <div className="bg-slate-50 rounded-lg p-4 sm:p-6 mb-6 border border-slate-200">
+            <div>
               {/* Frontend Layer */}
               <div className="flex justify-center mb-6">
-                <div className="bg-blue-100 border-2 border-blue-500 rounded-lg p-4 text-center w-96">
+                <div className="bg-blue-100 border-2 border-blue-500 rounded-lg p-4 text-center w-full max-w-sm sm:max-w-md">
                   <div className="font-bold text-blue-700">Frontend Layer</div>
-                  <div className="flex justify-center gap-4 mt-2">
+                  <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 mt-2">
                     <span className="px-3 py-1 bg-white rounded text-sm text-slate-700 font-medium">Next.js (Web)</span>
                     <span className="px-3 py-1 bg-white rounded text-sm text-slate-700 font-medium">React Native (Mobile)</span>
                   </div>
@@ -40,7 +40,7 @@ export default function BlueprintPage() {
 
               {/* API Gateway */}
               <div className="flex justify-center mb-6">
-                <div className="bg-green-100 border-2 border-green-500 rounded-lg p-4 text-center w-80">
+                <div className="bg-green-100 border-2 border-green-500 rounded-lg p-4 text-center w-full max-w-xs sm:max-w-sm">
                   <div className="font-bold text-green-700">Kong API Gateway</div>
                   <div className="text-xs text-slate-600 mt-1">JWT • Rate-Limiting • CORS • Analytics</div>
                 </div>
@@ -53,7 +53,7 @@ export default function BlueprintPage() {
               {/* Microservices Layer */}
               <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4 mb-6">
                 <div className="text-center font-semibold text-indigo-700 mb-4">Python FastAPI Microservices</div>
-                <div className="grid grid-cols-4 gap-2">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
                   {[
                     "UMS (User Management)",
                     "Upskilling Service",
@@ -82,25 +82,25 @@ export default function BlueprintPage() {
               </div>
 
               {/* Data Layer */}
-              <div className="flex justify-center gap-4">
-                <div className="bg-cyan-100 border-2 border-cyan-500 rounded-lg p-3 text-center">
-                  <div className="font-bold text-cyan-700 text-sm">PostgreSQL</div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4">
+                <div className="bg-cyan-100 border-2 border-cyan-500 rounded-lg p-2 sm:p-3 text-center">
+                  <div className="font-bold text-cyan-700 text-xs sm:text-sm">PostgreSQL</div>
                   <div className="text-xs text-slate-500">Primary DB</div>
                 </div>
-                <div className="bg-red-100 border-2 border-red-500 rounded-lg p-3 text-center">
-                  <div className="font-bold text-red-700 text-sm">Redis</div>
+                <div className="bg-red-100 border-2 border-red-500 rounded-lg p-2 sm:p-3 text-center">
+                  <div className="font-bold text-red-700 text-xs sm:text-sm">Redis</div>
                   <div className="text-xs text-slate-500">Cache/Sessions</div>
                 </div>
-                <div className="bg-yellow-100 border-2 border-yellow-600 rounded-lg p-3 text-center">
-                  <div className="font-bold text-yellow-700 text-sm">ElasticSearch</div>
+                <div className="bg-yellow-100 border-2 border-yellow-600 rounded-lg p-2 sm:p-3 text-center">
+                  <div className="font-bold text-yellow-700 text-xs sm:text-sm">ElasticSearch</div>
                   <div className="text-xs text-slate-500">Search/Index</div>
                 </div>
-                <div className="bg-purple-100 border-2 border-purple-500 rounded-lg p-3 text-center">
-                  <div className="font-bold text-purple-700 text-sm">Vector DB</div>
+                <div className="bg-purple-100 border-2 border-purple-500 rounded-lg p-2 sm:p-3 text-center">
+                  <div className="font-bold text-purple-700 text-xs sm:text-sm">Vector DB</div>
                   <div className="text-xs text-slate-500">Semantic Search</div>
                 </div>
-                <div className="bg-slate-100 border-2 border-slate-500 rounded-lg p-3 text-center">
-                  <div className="font-bold text-slate-700 text-sm">S3/GCS</div>
+                <div className="bg-slate-100 border-2 border-slate-500 rounded-lg p-2 sm:p-3 text-center col-span-2 sm:col-span-1">
+                  <div className="font-bold text-slate-700 text-xs sm:text-sm">S3/GCS</div>
                   <div className="text-xs text-slate-500">File Storage</div>
                 </div>
               </div>
@@ -109,10 +109,74 @@ export default function BlueprintPage() {
         </div>
 
         {/* Infrastructure Stack Summary */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border border-slate-200">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-6">Infrastructure Stack</h2>
+        <div className="bg-white rounded-xl shadow-lg p-4 sm:p-8 mb-6 sm:mb-8 border border-slate-200">
+          <h2 className="text-xl sm:text-2xl font-semibold text-slate-900 mb-4 sm:mb-6">Infrastructure Stack</h2>
 
-          <div className="overflow-x-auto">
+          {/* Mobile Card Layout */}
+          <div className="md:hidden space-y-3">
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Frontend</span>
+                <div className="flex gap-1 flex-wrap justify-end">
+                  <span className="px-2 py-0.5 bg-blue-100 text-blue-800 rounded text-xs font-medium">Next.js</span>
+                  <span className="px-2 py-0.5 bg-blue-100 text-blue-800 rounded text-xs font-medium">React Native</span>
+                </div>
+              </div>
+              <p className="text-xs text-slate-600 mb-1"><span className="font-medium">Components:</span> React, Tailwind CSS, TanStack Query</p>
+              <p className="text-xs text-slate-500"><span className="font-medium">Function:</span> User Interface, Server State Management</p>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Backend</span>
+                <span className="px-2 py-0.5 bg-green-100 text-green-800 rounded text-xs font-medium">Python FastAPI</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-1"><span className="font-medium">Components:</span> Django Admin, REST + GraphQL, WebSockets</p>
+              <p className="text-xs text-slate-500"><span className="font-medium">Function:</span> High-performance API, Business Logic</p>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">API Gateway</span>
+                <span className="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded text-xs font-medium">Kong Gateway</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-1"><span className="font-medium">Components:</span> JWT, Rate-Limiting, Analytics, CORS</p>
+              <p className="text-xs text-slate-500"><span className="font-medium">Function:</span> Edge Security, Centralized Routing</p>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Data Storage</span>
+                <span className="px-2 py-0.5 bg-cyan-100 text-cyan-800 rounded text-xs font-medium">Polyglot</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-1"><span className="font-medium">Components:</span> PostgreSQL, Redis, ElasticSearch, Vector DB</p>
+              <p className="text-xs text-slate-500"><span className="font-medium">Function:</span> Structured data, Caching, Search</p>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">AI</span>
+                <span className="px-2 py-0.5 bg-purple-100 text-purple-800 rounded text-xs font-medium">Generative AI</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-1"><span className="font-medium">Components:</span> C-RAG Pipeline, LLMs, Embeddings, MCP</p>
+              <p className="text-xs text-slate-500"><span className="font-medium">Function:</span> Content generation, Roleplay, Scoring</p>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">DevOps</span>
+                <span className="px-2 py-0.5 bg-orange-100 text-orange-800 rounded text-xs font-medium">GitLab CI/CD</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-1"><span className="font-medium">Components:</span> Docker, AWS/GCP, Load Balancing</p>
+              <p className="text-xs text-slate-500"><span className="font-medium">Function:</span> Automated pipeline, Cloud Hosting</p>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Automation</span>
+                <span className="px-2 py-0.5 bg-rose-100 text-rose-800 rounded text-xs font-medium">n8n</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-1"><span className="font-medium">Components:</span> Webhooks, External API Connectors</p>
+              <p className="text-xs text-slate-500"><span className="font-medium">Function:</span> Low-code automation, Data ingestion</p>
+            </div>
+          </div>
+
+          {/* Desktop Table Layout */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full">
               <thead className="bg-slate-50">
                 <tr>
@@ -186,8 +250,8 @@ export default function BlueprintPage() {
         </div>
 
         {/* Microservices Details */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border border-slate-200">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-6">Microservices Architecture (FastAPI)</h2>
+        <div className="bg-white rounded-xl shadow-lg p-4 sm:p-8 mb-6 sm:mb-8 border border-slate-200">
+          <h2 className="text-xl sm:text-2xl font-semibold text-slate-900 mb-4 sm:mb-6">Microservices Architecture (FastAPI)</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* UMS - User Management Service */}
@@ -500,10 +564,132 @@ export default function BlueprintPage() {
         </div>
 
         {/* Module Mapping */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border border-slate-200">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-6">Module Technology Mapping</h2>
+        <div className="bg-white rounded-xl shadow-lg p-4 sm:p-8 mb-6 sm:mb-8 border border-slate-200">
+          <h2 className="text-xl sm:text-2xl font-semibold text-slate-900 mb-4 sm:mb-6">Module Technology Mapping</h2>
 
-          <div className="overflow-x-auto">
+          {/* Mobile Card Layout */}
+          <div className="md:hidden space-y-3">
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Sign-In/Sign-Up</span>
+                <span className="px-2 py-0.5 bg-indigo-100 text-indigo-800 rounded text-xs font-medium">UMS</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-2">Auth, Verification, Bulk Onboarding</p>
+              <div className="flex flex-wrap gap-1">
+                <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 rounded text-xs">Next.js/RN</span>
+                <span className="px-1.5 py-0.5 bg-cyan-100 text-cyan-800 rounded text-xs">PostgreSQL</span>
+                <span className="px-1.5 py-0.5 bg-red-100 text-red-800 rounded text-xs">Redis</span>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Dashboard</span>
+                <span className="px-2 py-0.5 bg-indigo-100 text-indigo-800 rounded text-xs font-medium">UMS</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-2">Progress, AI Recommendations, Summary</p>
+              <div className="flex flex-wrap gap-1">
+                <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 rounded text-xs">Next.js/RN</span>
+                <span className="px-1.5 py-0.5 bg-purple-100 text-purple-800 rounded text-xs">AI Orchestration</span>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Roleplay</span>
+                <span className="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded text-xs font-medium">Upskilling</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-2">AI immersive simulations, Feedback</p>
+              <div className="flex flex-wrap gap-1">
+                <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 rounded text-xs">Next.js/RN</span>
+                <span className="px-1.5 py-0.5 bg-purple-100 text-purple-800 rounded text-xs">C-RAG</span>
+                <span className="px-1.5 py-0.5 bg-purple-100 text-purple-800 rounded text-xs">LLMs</span>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Practice</span>
+                <span className="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded text-xs font-medium">Upskilling</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-2">Virtual Interview, Scoring</p>
+              <div className="flex flex-wrap gap-1">
+                <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 rounded text-xs">Next.js/RN</span>
+                <span className="px-1.5 py-0.5 bg-purple-100 text-purple-800 rounded text-xs">C-RAG</span>
+                <span className="px-1.5 py-0.5 bg-purple-100 text-purple-800 rounded text-xs">LLMs</span>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Resume & Cover Letter</span>
+                <span className="px-2 py-0.5 bg-blue-100 text-blue-800 rounded text-xs font-medium">Resume Svc</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-2">Templates, ATS Scoring, Export</p>
+              <div className="flex flex-wrap gap-1">
+                <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 rounded text-xs">Next.js</span>
+                <span className="px-1.5 py-0.5 bg-purple-100 text-purple-800 rounded text-xs">LLMs (ATS)</span>
+                <span className="px-1.5 py-0.5 bg-slate-200 text-slate-800 rounded text-xs">S3/GCS</span>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Matchmaking</span>
+                <span className="px-2 py-0.5 bg-rose-100 text-rose-800 rounded text-xs font-medium">Matchmaking</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-2">Auto (Node.js+Puppeteer) / Manual</p>
+              <div className="flex flex-wrap gap-1">
+                <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 rounded text-xs">Next.js/RN</span>
+                <span className="px-1.5 py-0.5 bg-yellow-100 text-yellow-800 rounded text-xs">ElasticSearch</span>
+                <span className="px-1.5 py-0.5 bg-orange-100 text-orange-800 rounded text-xs">n8n</span>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Social Branding</span>
+                <span className="px-2 py-0.5 bg-orange-100 text-orange-800 rounded text-xs font-medium">Social Svc</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-2">Social posts, Hashtags, Scheduling</p>
+              <div className="flex flex-wrap gap-1">
+                <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 rounded text-xs">Next.js</span>
+                <span className="px-1.5 py-0.5 bg-orange-100 text-orange-800 rounded text-xs">n8n</span>
+                <span className="px-1.5 py-0.5 bg-purple-100 text-purple-800 rounded text-xs">LLMs</span>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Inbox</span>
+                <span className="px-2 py-0.5 bg-green-100 text-green-800 rounded text-xs font-medium">Notification</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-2">Unified notifications, Real-time</p>
+              <div className="flex flex-wrap gap-1">
+                <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 rounded text-xs">Next.js/RN</span>
+                <span className="px-1.5 py-0.5 bg-violet-100 text-violet-800 rounded text-xs">WebSockets</span>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Assessment</span>
+                <span className="px-2 py-0.5 bg-green-100 text-green-800 rounded text-xs font-medium">Assessment</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-2">MCQs, Case studies, Skill gap</p>
+              <div className="flex flex-wrap gap-1">
+                <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 rounded text-xs">Next.js</span>
+                <span className="px-1.5 py-0.5 bg-purple-100 text-purple-800 rounded text-xs">LLMs (Scoring)</span>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-semibold text-slate-900">Chatbot (Dadaji)</span>
+                <span className="px-2 py-0.5 bg-green-100 text-green-800 rounded text-xs font-medium">AI Orch</span>
+              </div>
+              <p className="text-xs text-slate-600 mb-2">AI Mentor Chatbot</p>
+              <div className="flex flex-wrap gap-1">
+                <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 rounded text-xs">Next.js/RN</span>
+                <span className="px-1.5 py-0.5 bg-purple-100 text-purple-800 rounded text-xs">C-RAG</span>
+                <span className="px-1.5 py-0.5 bg-purple-100 text-purple-800 rounded text-xs">Vector DB</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Table Layout */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full text-sm">
               <thead className="bg-slate-50">
                 <tr>
@@ -602,8 +788,8 @@ export default function BlueprintPage() {
         </div>
 
         {/* Data Storage Architecture */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border border-slate-200">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-6">Polyglot Data Storage</h2>
+        <div className="bg-white rounded-xl shadow-lg p-4 sm:p-8 mb-6 sm:mb-8 border border-slate-200">
+          <h2 className="text-xl sm:text-2xl font-semibold text-slate-900 mb-4 sm:mb-6">Polyglot Data Storage</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="bg-cyan-50 rounded-lg p-4 border border-cyan-200">
@@ -661,8 +847,8 @@ export default function BlueprintPage() {
         </div>
 
         {/* AI Stack */}
-        <div className="bg-linear-to-br from-purple-50 to-indigo-50 rounded-xl shadow-lg p-8 mb-8 border border-purple-200">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-6">Generative AI Stack</h2>
+        <div className="bg-linear-to-br from-purple-50 to-indigo-50 rounded-xl shadow-lg p-4 sm:p-8 mb-6 sm:mb-8 border border-purple-200">
+          <h2 className="text-xl sm:text-2xl font-semibold text-slate-900 mb-4 sm:mb-6">Generative AI Stack</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div>
@@ -720,10 +906,10 @@ export default function BlueprintPage() {
         </div>
 
         {/* Technology Stack Summary */}
-        <div className="bg-linear-to-br from-indigo-50 to-blue-50 rounded-xl shadow-lg p-8 border border-indigo-200">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-6">Technology Stack Summary</h2>
+        <div className="bg-linear-to-br from-indigo-50 to-blue-50 rounded-xl shadow-lg p-4 sm:p-8 border border-indigo-200">
+          <h2 className="text-xl sm:text-2xl font-semibold text-slate-900 mb-4 sm:mb-6">Technology Stack Summary</h2>
 
-          <div className="grid md:grid-cols-4 gap-4 mb-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-4 sm:mb-6">
             <div className="bg-white rounded-lg p-4 border border-slate-200">
               <h4 className="font-semibold text-slate-900 mb-2">Frontend</h4>
               <div className="flex flex-wrap gap-1">
@@ -765,7 +951,7 @@ export default function BlueprintPage() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
             <div className="bg-white rounded-lg p-4 border border-slate-200">
               <h4 className="font-semibold text-slate-900 mb-2">AI/ML</h4>
               <div className="flex flex-wrap gap-1">

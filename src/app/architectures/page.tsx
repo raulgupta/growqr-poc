@@ -2,38 +2,38 @@
 
 export default function Architectures() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Page Header */}
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">
+        <div className="mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-4xl font-bold text-slate-900 mb-2">
             Generative AI Architectures for Interview Systems
           </h1>
-          <p className="text-lg text-slate-600">
+          <p className="text-base sm:text-lg text-slate-600">
             Comprehensive comparison of architecture models and technology stacks
           </p>
         </div>
 
         {/* Architecture Models */}
-        <div className="mb-8">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+        <div className="mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4 sm:mb-6">
             Architecture Models Comparison
           </h2>
 
           {/* Cloud-Based Architecture */}
-          <div className="bg-white rounded-xl shadow-lg p-8 mb-6 border border-slate-200">
-            <h3 className="text-2xl font-semibold text-slate-900 mb-4 flex items-center gap-2">
+          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-8 mb-4 sm:mb-6 border border-slate-200">
+            <h3 className="text-lg sm:text-2xl font-semibold text-slate-900 mb-4 flex items-center gap-2">
               🌩️ 1. Cloud-Based Integrated Architecture
             </h3>
 
-            <div className="bg-slate-50 rounded-lg p-4 mb-6 border border-slate-200">
-              <code className="text-sm text-slate-700 break-words">
+            <div className="bg-slate-50 rounded-lg p-3 sm:p-4 mb-4 sm:mb-6 border border-slate-200">
+              <code className="text-xs sm:text-sm text-slate-700 wrap-break-word block">
                 User → API Gateway → Orchestration Layer → [OpenAI/Claude/Anthropic] → [ElevenLabs] → [Synthesia/Akool] → User
               </code>
             </div>
 
-            <div className="mb-6">
-              <h4 className="text-lg font-semibold text-slate-900 mb-3">Key Components:</h4>
+            <div className="mb-4 sm:mb-6">
+              <h4 className="text-base sm:text-lg font-semibold text-slate-900 mb-3">Key Components:</h4>
               <ul className="space-y-2">
                 <li className="text-sm text-slate-700 flex items-start gap-2">
                   <span className="text-indigo-500 mt-1">•</span>
@@ -54,48 +54,48 @@ export default function Architectures() {
               </ul>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <div>
-                <h4 className="text-lg font-semibold text-green-600 mb-3 flex items-center gap-2">
+                <h4 className="text-base sm:text-lg font-semibold text-green-600 mb-3 flex items-center gap-2">
                   <span>✅</span> Pros
                 </h4>
                 <ul className="space-y-2">
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-green-500 mt-1">•</span>
                     <span>Minimal infrastructure management</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-green-500 mt-1">•</span>
                     <span>Access to state-of-the-art models</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-green-500 mt-1">•</span>
                     <span>Rapid deployment</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-green-500 mt-1">•</span>
                     <span>Automatic scaling</span>
                   </li>
                 </ul>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-red-600 mb-3 flex items-center gap-2">
+                <h4 className="text-base sm:text-lg font-semibold text-red-600 mb-3 flex items-center gap-2">
                   <span>❌</span> Cons
                 </h4>
                 <ul className="space-y-2">
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-red-500 mt-1">•</span>
                     <span>Higher operational costs</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-red-500 mt-1">•</span>
                     <span>Potential latency issues</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-red-500 mt-1">•</span>
                     <span>Vendor lock-in risks</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-red-500 mt-1">•</span>
                     <span>Data privacy considerations</span>
                   </li>
@@ -105,13 +105,13 @@ export default function Architectures() {
           </div>
 
           {/* Hybrid Architecture */}
-          <div className="bg-white rounded-xl shadow-lg p-8 mb-6 border border-slate-200">
-            <h3 className="text-2xl font-semibold text-slate-900 mb-4 flex items-center gap-2">
+          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-8 mb-4 sm:mb-6 border border-slate-200">
+            <h3 className="text-lg sm:text-2xl font-semibold text-slate-900 mb-4 flex items-center gap-2">
               🔄 2. Hybrid Architecture (Cloud + Local)
             </h3>
 
-            <div className="bg-slate-50 rounded-lg p-4 mb-6 border border-slate-200">
-              <code className="text-sm text-slate-700 break-words block">
+            <div className="bg-slate-50 rounded-lg p-3 sm:p-4 mb-4 sm:mb-6 border border-slate-200">
+              <code className="text-xs sm:text-sm text-slate-700 wrap-break-word block">
                 User → API Gateway → Orchestration Layer →<br/>
                 &nbsp;&nbsp;├─ [Local Llama 3/Mistral] for core logic<br/>
                 &nbsp;&nbsp;├─ [Cloud APIs] for specialized tasks<br/>
@@ -119,70 +119,70 @@ export default function Architectures() {
               </code>
             </div>
 
-            <div className="mb-6">
-              <h4 className="text-lg font-semibold text-slate-900 mb-3">Key Components:</h4>
+            <div className="mb-4 sm:mb-6">
+              <h4 className="text-base sm:text-lg font-semibold text-slate-900 mb-3">Key Components:</h4>
               <ul className="space-y-2">
-                <li className="text-sm text-slate-700 flex items-start gap-2">
+                <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                   <span className="text-indigo-500 mt-1">•</span>
                   <span><strong>Orchestration:</strong> DSPy or Haystack</span>
                 </li>
-                <li className="text-sm text-slate-700 flex items-start gap-2">
+                <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                   <span className="text-indigo-500 mt-1">•</span>
                   <span><strong>Local LLM:</strong> Llama 3 70B or Mistral Large</span>
                 </li>
-                <li className="text-sm text-slate-700 flex items-start gap-2">
+                <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                   <span className="text-indigo-500 mt-1">•</span>
                   <span><strong>Voice:</strong> Local XTTS-v2 + ElevenLabs for premium voices</span>
                 </li>
-                <li className="text-sm text-slate-700 flex items-start gap-2">
+                <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                   <span className="text-indigo-500 mt-1">•</span>
                   <span><strong>Avatar:</strong> Akool API</span>
                 </li>
               </ul>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <div>
-                <h4 className="text-lg font-semibold text-green-600 mb-3 flex items-center gap-2">
+                <h4 className="text-base sm:text-lg font-semibold text-green-600 mb-3 flex items-center gap-2">
                   <span>✅</span> Pros
                 </h4>
                 <ul className="space-y-2">
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-green-500 mt-1">•</span>
                     <span>Reduced operational costs</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-green-500 mt-1">•</span>
                     <span>Better data privacy</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-green-500 mt-1">•</span>
                     <span>Lower latency for core functions</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-green-500 mt-1">•</span>
                     <span>More control over model behavior</span>
                   </li>
                 </ul>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-red-600 mb-3 flex items-center gap-2">
+                <h4 className="text-base sm:text-lg font-semibold text-red-600 mb-3 flex items-center gap-2">
                   <span>❌</span> Cons
                 </h4>
                 <ul className="space-y-2">
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-red-500 mt-1">•</span>
                     <span>Higher infrastructure requirements</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-red-500 mt-1">•</span>
                     <span>More complex deployment</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-red-500 mt-1">•</span>
                     <span>Potential quality tradeoffs</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-red-500 mt-1">•</span>
                     <span>Development complexity</span>
                   </li>
@@ -192,13 +192,13 @@ export default function Architectures() {
           </div>
 
           {/* Fully Self-Hosted Architecture */}
-          <div className="bg-white rounded-xl shadow-lg p-8 mb-6 border border-slate-200">
-            <h3 className="text-2xl font-semibold text-slate-900 mb-4 flex items-center gap-2">
+          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-8 mb-4 sm:mb-6 border border-slate-200">
+            <h3 className="text-lg sm:text-2xl font-semibold text-slate-900 mb-4 flex items-center gap-2">
               🏠 3. Fully Self-Hosted Architecture
             </h3>
 
-            <div className="bg-slate-50 rounded-lg p-4 mb-6 border border-slate-200">
-              <code className="text-sm text-slate-700 break-words block">
+            <div className="bg-slate-50 rounded-lg p-3 sm:p-4 mb-4 sm:mb-6 border border-slate-200">
+              <code className="text-xs sm:text-sm text-slate-700 wrap-break-word block">
                 User → Load Balancer → Application Server →<br/>
                 &nbsp;&nbsp;├─ [Local LLM Cluster]<br/>
                 &nbsp;&nbsp;├─ [Local TTS Engine]<br/>
@@ -206,70 +206,70 @@ export default function Architectures() {
               </code>
             </div>
 
-            <div className="mb-6">
-              <h4 className="text-lg font-semibold text-slate-900 mb-3">Key Components:</h4>
+            <div className="mb-4 sm:mb-6">
+              <h4 className="text-base sm:text-lg font-semibold text-slate-900 mb-3">Key Components:</h4>
               <ul className="space-y-2">
-                <li className="text-sm text-slate-700 flex items-start gap-2">
+                <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                   <span className="text-indigo-500 mt-1">•</span>
                   <span><strong>Orchestration:</strong> LangChain or custom solution</span>
                 </li>
-                <li className="text-sm text-slate-700 flex items-start gap-2">
+                <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                   <span className="text-indigo-500 mt-1">•</span>
                   <span><strong>LLM:</strong> Llama 3, Mistral, or Falcon</span>
                 </li>
-                <li className="text-sm text-slate-700 flex items-start gap-2">
+                <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                   <span className="text-indigo-500 mt-1">•</span>
                   <span><strong>Voice:</strong> Coqui XTTS or Bark</span>
                 </li>
-                <li className="text-sm text-slate-700 flex items-start gap-2">
+                <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                   <span className="text-indigo-500 mt-1">•</span>
                   <span><strong>Avatar:</strong> ComfyUI/Stable Diffusion for images + custom animation</span>
                 </li>
               </ul>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <div>
-                <h4 className="text-lg font-semibold text-green-600 mb-3 flex items-center gap-2">
+                <h4 className="text-base sm:text-lg font-semibold text-green-600 mb-3 flex items-center gap-2">
                   <span>✅</span> Pros
                 </h4>
                 <ul className="space-y-2">
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-green-500 mt-1">•</span>
                     <span>Complete data sovereignty</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-green-500 mt-1">•</span>
                     <span>No usage-based costs</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-green-500 mt-1">•</span>
                     <span>No external dependencies</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-green-500 mt-1">•</span>
                     <span>Full customization potential</span>
                   </li>
                 </ul>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-red-600 mb-3 flex items-center gap-2">
+                <h4 className="text-base sm:text-lg font-semibold text-red-600 mb-3 flex items-center gap-2">
                   <span>❌</span> Cons
                 </h4>
                 <ul className="space-y-2">
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-red-500 mt-1">•</span>
                     <span>Highest infrastructure costs</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-red-500 mt-1">•</span>
                     <span>Significant technical expertise required</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-red-500 mt-1">•</span>
                     <span>Quality may lag behind commercial options</span>
                   </li>
-                  <li className="text-sm text-slate-700 flex items-start gap-2">
+                  <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                     <span className="text-red-500 mt-1">•</span>
                     <span>Ongoing maintenance burden</span>
                   </li>
@@ -280,13 +280,67 @@ export default function Architectures() {
         </div>
 
         {/* LLM Orchestration Solutions */}
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-slate-200">
-          <div className="p-6 bg-slate-50 border-b border-slate-200">
-            <h2 className="text-2xl font-semibold text-slate-900 flex items-center gap-2">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-6 sm:mb-8 border border-slate-200">
+          <div className="p-4 sm:p-6 bg-slate-50 border-b border-slate-200">
+            <h2 className="text-lg sm:text-2xl font-semibold text-slate-900 flex items-center gap-2">
               📊 LLM Orchestration Solutions Comparison
             </h2>
           </div>
-          <div className="overflow-x-auto">
+
+          {/* Mobile Card Layout */}
+          <div className="md:hidden p-4 space-y-3">
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="font-semibold text-slate-900 mb-2">LangChain</div>
+              <div className="space-y-1 text-xs">
+                <p><span className="text-green-600 font-medium">Strengths:</span> <span className="text-slate-600">Comprehensive, mature ecosystem, many integrations</span></p>
+                <p><span className="text-red-600 font-medium">Weaknesses:</span> <span className="text-slate-600">Can be complex, some overhead</span></p>
+                <p><span className="text-indigo-600 font-medium">Best For:</span> <span className="text-slate-600">Teams familiar with Python, complex workflows</span></p>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="font-semibold text-slate-900 mb-2">LlamaIndex</div>
+              <div className="space-y-1 text-xs">
+                <p><span className="text-green-600 font-medium">Strengths:</span> <span className="text-slate-600">Data-focused, strong RAG capabilities</span></p>
+                <p><span className="text-red-600 font-medium">Weaknesses:</span> <span className="text-slate-600">Less general-purpose</span></p>
+                <p><span className="text-indigo-600 font-medium">Best For:</span> <span className="text-slate-600">Systems requiring knowledge retrieval</span></p>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="font-semibold text-slate-900 mb-2">DSPy</div>
+              <div className="space-y-1 text-xs">
+                <p><span className="text-green-600 font-medium">Strengths:</span> <span className="text-slate-600">Programmatic prompt engineering, optimization</span></p>
+                <p><span className="text-red-600 font-medium">Weaknesses:</span> <span className="text-slate-600">Newer, smaller community</span></p>
+                <p><span className="text-indigo-600 font-medium">Best For:</span> <span className="text-slate-600">Teams focused on prompt optimization</span></p>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="font-semibold text-slate-900 mb-2">Haystack</div>
+              <div className="space-y-1 text-xs">
+                <p><span className="text-green-600 font-medium">Strengths:</span> <span className="text-slate-600">Modular, production-ready</span></p>
+                <p><span className="text-red-600 font-medium">Weaknesses:</span> <span className="text-slate-600">Steeper learning curve</span></p>
+                <p><span className="text-indigo-600 font-medium">Best For:</span> <span className="text-slate-600">Enterprise deployments</span></p>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="font-semibold text-slate-900 mb-2">Semantic Kernel</div>
+              <div className="space-y-1 text-xs">
+                <p><span className="text-green-600 font-medium">Strengths:</span> <span className="text-slate-600">.NET integration, Microsoft ecosystem</span></p>
+                <p><span className="text-red-600 font-medium">Weaknesses:</span> <span className="text-slate-600">Limited community vs others</span></p>
+                <p><span className="text-indigo-600 font-medium">Best For:</span> <span className="text-slate-600">Microsoft-centric stacks</span></p>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="font-semibold text-slate-900 mb-2">Custom Solution</div>
+              <div className="space-y-1 text-xs">
+                <p><span className="text-green-600 font-medium">Strengths:</span> <span className="text-slate-600">Tailored to exact needs</span></p>
+                <p><span className="text-red-600 font-medium">Weaknesses:</span> <span className="text-slate-600">Development time, maintenance</span></p>
+                <p><span className="text-indigo-600 font-medium">Best For:</span> <span className="text-slate-600">Unique requirements, specialized systems</span></p>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Table Layout */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full">
               <thead className="bg-slate-50">
                 <tr>
@@ -339,16 +393,66 @@ export default function Architectures() {
         </div>
 
         {/* LLM Options Comparison */}
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-slate-200">
-          <div className="p-6 bg-slate-50 border-b border-slate-200">
-            <h2 className="text-2xl font-semibold text-slate-900 flex items-center gap-2">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-6 sm:mb-8 border border-slate-200">
+          <div className="p-4 sm:p-6 bg-slate-50 border-b border-slate-200">
+            <h2 className="text-lg sm:text-2xl font-semibold text-slate-900 flex items-center gap-2">
               🧠 LLM Options Comparison
             </h2>
           </div>
 
-          <div className="p-6">
-            <h3 className="text-xl font-semibold text-slate-900 mb-4">Cloud LLMs</h3>
-            <div className="overflow-x-auto">
+          <div className="p-4 sm:p-6">
+            <h3 className="text-base sm:text-xl font-semibold text-slate-900 mb-4">Cloud LLMs</h3>
+
+            {/* Mobile Card Layout */}
+            <div className="md:hidden space-y-3">
+              <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="font-semibold text-slate-900">GPT-4o</span>
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">$10-30/M tokens</span>
+                </div>
+                <div className="space-y-1 text-xs text-slate-700">
+                  <p><span className="text-green-700 font-bold">+</span> Top performance, multimodal, fast</p>
+                  <p><span className="text-red-700 font-bold">-</span> Expensive, black-box</p>
+                  <p className="text-indigo-700 font-medium">Best for: Premium experience, complex reasoning</p>
+                </div>
+              </div>
+              <div className="bg-purple-50 rounded-lg p-3 border border-purple-200">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="font-semibold text-slate-900">Claude 3 Opus</span>
+                  <span className="text-xs bg-purple-100 text-purple-800 px-2 py-0.5 rounded">$15-75/M tokens</span>
+                </div>
+                <div className="space-y-1 text-xs text-slate-700">
+                  <p><span className="text-green-700 font-bold">+</span> Excellent reasoning, long context</p>
+                  <p><span className="text-red-700 font-bold">-</span> Expensive, less developer tools</p>
+                  <p className="text-indigo-700 font-medium">Best for: Nuanced interview feedback</p>
+                </div>
+              </div>
+              <div className="bg-purple-50 rounded-lg p-3 border border-purple-200">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="font-semibold text-slate-900">Claude 3 Sonnet</span>
+                  <span className="text-xs bg-purple-100 text-purple-800 px-2 py-0.5 rounded">$3-15/M tokens</span>
+                </div>
+                <div className="space-y-1 text-xs text-slate-700">
+                  <p><span className="text-green-700 font-bold">+</span> Good balance of performance/cost</p>
+                  <p><span className="text-red-700 font-bold">-</span> Less powerful than Opus</p>
+                  <p className="text-indigo-700 font-medium">Best for: Mid-tier solution</p>
+                </div>
+              </div>
+              <div className="bg-green-50 rounded-lg p-3 border border-green-200">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="font-semibold text-slate-900">GPT-3.5 Turbo</span>
+                  <span className="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded">$0.5-1.5/M tokens</span>
+                </div>
+                <div className="space-y-1 text-xs text-slate-700">
+                  <p><span className="text-green-700 font-bold">+</span> Cost-effective, fast</p>
+                  <p><span className="text-red-700 font-bold">-</span> Less capable than newer models</p>
+                  <p className="text-indigo-700 font-medium">Best for: Budget-conscious implementations</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Desktop Table */}
+            <div className="hidden md:block overflow-x-auto">
               <table className="w-full">
                 <thead className="bg-slate-50">
                   <tr>
@@ -395,17 +499,119 @@ export default function Architectures() {
         </div>
 
         {/* Local LLMs Section */}
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-slate-200">
-          <div className="p-6 bg-gradient-to-r from-emerald-50 to-teal-50 border-b border-slate-200">
-            <h2 className="text-3xl font-bold text-slate-900 flex items-center gap-2">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-6 sm:mb-8 border border-slate-200">
+          <div className="p-4 sm:p-6 bg-linear-to-r from-emerald-50 to-teal-50 border-b border-slate-200">
+            <h2 className="text-xl sm:text-3xl font-bold text-slate-900 flex items-center gap-2">
               🚀 Local LLMs for Scalable Interview Systems
             </h2>
-            <p className="text-slate-600 mt-2">Open-source options for self-hosted deployments</p>
+            <p className="text-sm sm:text-base text-slate-600 mt-2">Open-source options for self-hosted deployments</p>
           </div>
 
-          <div className="p-6">
-            <h3 className="text-xl font-semibold text-slate-900 mb-4">Open-Source LLM Comparison for Local Deployment</h3>
-            <div className="overflow-x-auto">
+          <div className="p-4 sm:p-6">
+            <h3 className="text-base sm:text-xl font-semibold text-slate-900 mb-4">Open-Source LLM Comparison for Local Deployment</h3>
+
+            {/* Mobile Card Layout */}
+            <div className="md:hidden space-y-3">
+              <div className="bg-emerald-50 rounded-lg p-3 border border-emerald-200">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="font-semibold text-slate-900">Llama 3 8B</span>
+                  <span className="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">8B params</span>
+                </div>
+                <div className="space-y-1 text-xs text-slate-700">
+                  <p><span className="text-slate-600 font-medium">Performance:</span> Good | <span className="text-slate-600 font-medium">Hardware:</span> 1x RTX 3090</p>
+                  <p><span className="text-green-700 font-bold">+</span> Fast, efficient, balanced</p>
+                  <p><span className="text-red-700 font-bold">-</span> Less capable than larger models</p>
+                  <p className="text-indigo-700 font-medium">Best for: Core interview logic, basic Q&A</p>
+                </div>
+              </div>
+              <div className="bg-emerald-50 rounded-lg p-3 border border-emerald-200">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="font-semibold text-slate-900">Llama 3 70B</span>
+                  <span className="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">70B params</span>
+                </div>
+                <div className="space-y-1 text-xs text-slate-700">
+                  <p><span className="text-slate-600 font-medium">Performance:</span> Excellent | <span className="text-slate-600 font-medium">Hardware:</span> 2-4x RTX 4090/A100</p>
+                  <p><span className="text-green-700 font-bold">+</span> Near commercial quality</p>
+                  <p><span className="text-red-700 font-bold">-</span> High resource requirements</p>
+                  <p className="text-indigo-700 font-medium">Best for: Complete interview system</p>
+                </div>
+              </div>
+              <div className="bg-orange-50 rounded-lg p-3 border border-orange-200">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="font-semibold text-slate-900">Mistral 7B</span>
+                  <span className="text-xs bg-orange-100 text-orange-800 px-2 py-0.5 rounded">7B params</span>
+                </div>
+                <div className="space-y-1 text-xs text-slate-700">
+                  <p><span className="text-slate-600 font-medium">Performance:</span> Good | <span className="text-slate-600 font-medium">Hardware:</span> 1x RTX 3080</p>
+                  <p><span className="text-green-700 font-bold">+</span> Efficient, strong reasoning</p>
+                  <p><span className="text-red-700 font-bold">-</span> Limited context window</p>
+                  <p className="text-indigo-700 font-medium">Best for: Question generation</p>
+                </div>
+              </div>
+              <div className="bg-orange-50 rounded-lg p-3 border border-orange-200">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="font-semibold text-slate-900">Mistral Large</span>
+                  <span className="text-xs bg-orange-100 text-orange-800 px-2 py-0.5 rounded">~45B params</span>
+                </div>
+                <div className="space-y-1 text-xs text-slate-700">
+                  <p><span className="text-slate-600 font-medium">Performance:</span> Very Good | <span className="text-slate-600 font-medium">Hardware:</span> 2x RTX 4090</p>
+                  <p><span className="text-green-700 font-bold">+</span> Strong instruction following</p>
+                  <p><span className="text-red-700 font-bold">-</span> Resource intensive</p>
+                  <p className="text-indigo-700 font-medium">Best for: Comprehensive interviews</p>
+                </div>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="font-semibold text-slate-900">Phi-3 Mini</span>
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">3.8B params</span>
+                </div>
+                <div className="space-y-1 text-xs text-slate-700">
+                  <p><span className="text-slate-600 font-medium">Performance:</span> Surprisingly good | <span className="text-slate-600 font-medium">Hardware:</span> 1x RTX 3060</p>
+                  <p><span className="text-green-700 font-bold">+</span> Extremely efficient</p>
+                  <p><span className="text-red-700 font-bold">-</span> Limited capabilities</p>
+                  <p className="text-indigo-700 font-medium">Best for: Simple interviews, filtering</p>
+                </div>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="font-semibold text-slate-900">Phi-3 Medium</span>
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">14B params</span>
+                </div>
+                <div className="space-y-1 text-xs text-slate-700">
+                  <p><span className="text-slate-600 font-medium">Performance:</span> Very Good | <span className="text-slate-600 font-medium">Hardware:</span> 1x RTX 4070</p>
+                  <p><span className="text-green-700 font-bold">+</span> Excellent performance/size ratio</p>
+                  <p><span className="text-red-700 font-bold">-</span> Limited context</p>
+                  <p className="text-indigo-700 font-medium">Best for: Mid-complexity interviews</p>
+                </div>
+              </div>
+              <div className="bg-purple-50 rounded-lg p-3 border border-purple-200">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="font-semibold text-slate-900">SOLAR 10.7B</span>
+                  <span className="text-xs bg-purple-100 text-purple-800 px-2 py-0.5 rounded">10.7B params</span>
+                </div>
+                <div className="space-y-1 text-xs text-slate-700">
+                  <p><span className="text-slate-600 font-medium">Performance:</span> Good | <span className="text-slate-600 font-medium">Hardware:</span> 1x RTX 3090</p>
+                  <p><span className="text-green-700 font-bold">+</span> Strong reasoning</p>
+                  <p><span className="text-red-700 font-bold">-</span> Needs fine-tuning for interviews</p>
+                  <p className="text-indigo-700 font-medium">Best for: Customized interview scenarios</p>
+                </div>
+              </div>
+              <div className="bg-red-50 rounded-lg p-3 border border-red-200">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="font-semibold text-slate-900">Gemma 7B</span>
+                  <span className="text-xs bg-red-100 text-red-800 px-2 py-0.5 rounded">7B params</span>
+                </div>
+                <div className="space-y-1 text-xs text-slate-700">
+                  <p><span className="text-slate-600 font-medium">Performance:</span> Good | <span className="text-slate-600 font-medium">Hardware:</span> 1x RTX 3080</p>
+                  <p><span className="text-green-700 font-bold">+</span> Google quality, efficient</p>
+                  <p><span className="text-red-700 font-bold">-</span> Newer, less tested</p>
+                  <p className="text-indigo-700 font-medium">Best for: General interview logic</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Desktop Table Layout */}
+            <div className="hidden md:block overflow-x-auto">
               <table className="w-full">
                 <thead className="bg-slate-50">
                   <tr>
@@ -498,15 +704,56 @@ export default function Architectures() {
         </div>
 
         {/* Quantization and Deployment */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
           {/* Quantization Options */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200">
-            <div className="p-6 bg-slate-50 border-b border-slate-200">
-              <h3 className="text-xl font-semibold text-slate-900 flex items-center gap-2">
+            <div className="p-4 sm:p-6 bg-slate-50 border-b border-slate-200">
+              <h3 className="text-base sm:text-xl font-semibold text-slate-900 flex items-center gap-2">
                 📉 Quantization Options for Efficiency
               </h3>
             </div>
-            <div className="overflow-x-auto">
+
+            {/* Mobile Card Layout */}
+            <div className="md:hidden p-4 space-y-3">
+              <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">GGUF (4-bit)</span>
+                  <span className="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded">~75% savings</span>
+                </div>
+                <p className="text-xs text-slate-600">Impact: Moderate | Best for: Limited hardware</p>
+              </div>
+              <div className="bg-emerald-50 rounded-lg p-3 border border-emerald-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">GGUF (8-bit)</span>
+                  <span className="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">~50% savings</span>
+                </div>
+                <p className="text-xs text-slate-600">Impact: Minimal | Best for: Best balance</p>
+              </div>
+              <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">AWQ</span>
+                  <span className="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded">~75% savings</span>
+                </div>
+                <p className="text-xs text-slate-600">Impact: Low | Best for: Larger models</p>
+              </div>
+              <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">GPTQ</span>
+                  <span className="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded">~70% savings</span>
+                </div>
+                <p className="text-xs text-slate-600">Impact: Low-moderate | Best for: Alternative to AWQ</p>
+              </div>
+              <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">bitsandbytes</span>
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Variable</span>
+                </div>
+                <p className="text-xs text-slate-600">Impact: Minimal (8-bit) | Best for: Training/fine-tuning</p>
+              </div>
+            </div>
+
+            {/* Desktop Table Layout */}
+            <div className="hidden md:block overflow-x-auto">
               <table className="w-full">
                 <thead className="bg-slate-50">
                   <tr>
@@ -554,12 +801,48 @@ export default function Architectures() {
 
           {/* Deployment Frameworks */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200">
-            <div className="p-6 bg-slate-50 border-b border-slate-200">
-              <h3 className="text-xl font-semibold text-slate-900 flex items-center gap-2">
+            <div className="p-4 sm:p-6 bg-slate-50 border-b border-slate-200">
+              <h3 className="text-base sm:text-xl font-semibold text-slate-900 flex items-center gap-2">
                 🛠️ Deployment Frameworks
               </h3>
             </div>
-            <div className="overflow-x-auto">
+
+            {/* Mobile Card Layout */}
+            <div className="md:hidden p-4 space-y-3">
+              <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+                <div className="font-semibold text-slate-900 text-sm mb-1">llama.cpp</div>
+                <p className="text-xs text-slate-600">Optimized, low resource</p>
+                <p className="text-xs text-indigo-600">Best for: Edge devices</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
+                <div className="font-semibold text-slate-900 text-sm mb-1">vLLM</div>
+                <p className="text-xs text-slate-600">Fast, PagedAttention</p>
+                <p className="text-xs text-indigo-600">Best for: High-throughput</p>
+              </div>
+              <div className="bg-purple-50 rounded-lg p-3 border border-purple-200">
+                <div className="font-semibold text-slate-900 text-sm mb-1">TGI</div>
+                <p className="text-xs text-slate-600">Production-ready</p>
+                <p className="text-xs text-indigo-600">Best for: Enterprise</p>
+              </div>
+              <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+                <div className="font-semibold text-slate-900 text-sm mb-1">LMStudio</div>
+                <p className="text-xs text-slate-600">User-friendly, GUI</p>
+                <p className="text-xs text-indigo-600">Best for: Testing</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-3 border border-green-200">
+                <div className="font-semibold text-slate-900 text-sm mb-1">LocalAI</div>
+                <p className="text-xs text-slate-600">OpenAI compatible</p>
+                <p className="text-xs text-indigo-600">Best for: Drop-in replacement</p>
+              </div>
+              <div className="bg-orange-50 rounded-lg p-3 border border-orange-200">
+                <div className="font-semibold text-slate-900 text-sm mb-1">Ollama</div>
+                <p className="text-xs text-slate-600">Easy setup</p>
+                <p className="text-xs text-indigo-600">Best for: Quick deployment</p>
+              </div>
+            </div>
+
+            {/* Desktop Table Layout */}
+            <div className="hidden md:block overflow-x-auto">
               <table className="w-full">
                 <thead className="bg-slate-50">
                   <tr>
@@ -606,15 +889,63 @@ export default function Architectures() {
         </div>
 
         {/* Fine-Tuning and Local Voice/Avatar Options */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
           {/* Fine-Tuning Approaches */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200">
-            <div className="p-6 bg-slate-50 border-b border-slate-200">
-              <h3 className="text-xl font-semibold text-slate-900 flex items-center gap-2">
+            <div className="p-4 sm:p-6 bg-slate-50 border-b border-slate-200">
+              <h3 className="text-base sm:text-xl font-semibold text-slate-900 flex items-center gap-2">
                 🎯 Fine-Tuning Approaches
               </h3>
             </div>
-            <div className="overflow-x-auto">
+
+            {/* Mobile Card Layout */}
+            <div className="md:hidden p-4 space-y-3">
+              <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">LoRA/QLoRA</span>
+                  <span className="text-xs bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded">Medium</span>
+                </div>
+                <p className="text-xs text-slate-600">Data: 1,000+ examples | When: Domain-specific</p>
+              </div>
+              <div className="bg-red-50 rounded-lg p-3 border border-red-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">Full Fine-tuning</span>
+                  <span className="text-xs bg-red-100 text-red-800 px-2 py-0.5 rounded">High</span>
+                </div>
+                <p className="text-xs text-slate-600">Data: 10,000+ examples | When: Enterprise with resources</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">PEFT</span>
+                  <span className="text-xs bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded">Medium</span>
+                </div>
+                <p className="text-xs text-slate-600">Data: 2,000+ examples | When: Limited compute</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-3 border border-green-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">Prompt Eng.</span>
+                  <span className="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded">Low</span>
+                </div>
+                <p className="text-xs text-slate-600">Data: Dozens | When: Rapid deployment</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">RAG</span>
+                  <span className="text-xs bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded">Medium</span>
+                </div>
+                <p className="text-xs text-slate-600">Data: Knowledge base | When: Industry-specific</p>
+              </div>
+              <div className="bg-red-50 rounded-lg p-3 border border-red-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">DPO/RLHF</span>
+                  <span className="text-xs bg-red-100 text-red-800 px-2 py-0.5 rounded">High</span>
+                </div>
+                <p className="text-xs text-slate-600">Data: Preference pairs | When: Refining style</p>
+              </div>
+            </div>
+
+            {/* Desktop Table Layout */}
+            <div className="hidden md:block overflow-x-auto">
               <table className="w-full text-sm">
                 <thead className="bg-slate-50">
                   <tr>
@@ -668,12 +999,66 @@ export default function Architectures() {
 
           {/* Local Voice Generation */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200">
-            <div className="p-6 bg-slate-50 border-b border-slate-200">
-              <h3 className="text-xl font-semibold text-slate-900 flex items-center gap-2">
+            <div className="p-4 sm:p-6 bg-slate-50 border-b border-slate-200">
+              <h3 className="text-base sm:text-xl font-semibold text-slate-900 flex items-center gap-2">
                 🎙️ Local Voice Generation
               </h3>
             </div>
-            <div className="overflow-x-auto">
+
+            {/* Mobile Card Layout */}
+            <div className="md:hidden p-4 space-y-3">
+              <div className="bg-emerald-50 rounded-lg p-3 border border-emerald-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">XTTS-v2</span>
+                  <span className="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">Very Good</span>
+                </div>
+                <p className="text-xs text-slate-700">Hardware: 1x RTX 3080+</p>
+                <p className="text-xs text-indigo-700 font-medium">Best for: High-quality responses</p>
+              </div>
+              <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">Bark</span>
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Good</span>
+                </div>
+                <p className="text-xs text-slate-700">Hardware: 1x RTX 3070+</p>
+                <p className="text-xs text-indigo-700 font-medium">Best for: Pre-recorded content</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-3 border border-green-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">Piper TTS</span>
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Good</span>
+                </div>
+                <p className="text-xs text-slate-700">Hardware: CPU sufficient</p>
+                <p className="text-xs text-indigo-700 font-medium">Best for: Real-time responses</p>
+              </div>
+              <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">Coqui TTS</span>
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Good</span>
+                </div>
+                <p className="text-xs text-slate-700">Hardware: 1x RTX 3060+</p>
+                <p className="text-xs text-indigo-700 font-medium">Best for: Custom voices</p>
+              </div>
+              <div className="bg-purple-50 rounded-lg p-3 border border-purple-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">Tortoise TTS</span>
+                  <span className="text-xs bg-purple-100 text-purple-800 px-2 py-0.5 rounded">Excellent</span>
+                </div>
+                <p className="text-xs text-slate-700">Hardware: 1x RTX 3090+</p>
+                <p className="text-xs text-indigo-700 font-medium">Best for: Pre-generated content</p>
+              </div>
+              <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+                <div className="flex justify-between items-start mb-1">
+                  <span className="font-semibold text-slate-900 text-sm">MMS TTS</span>
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Good</span>
+                </div>
+                <p className="text-xs text-slate-700">Hardware: 1x RTX 3070+</p>
+                <p className="text-xs text-indigo-700 font-medium">Best for: International interviews</p>
+              </div>
+            </div>
+
+            {/* Desktop Table Layout */}
+            <div className="hidden md:block overflow-x-auto">
               <table className="w-full text-sm">
                 <thead className="bg-slate-50">
                   <tr>
@@ -727,13 +1112,91 @@ export default function Architectures() {
         </div>
 
         {/* Local Avatar Generation */}
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-slate-200">
-          <div className="p-6 bg-slate-50 border-b border-slate-200">
-            <h3 className="text-xl font-semibold text-slate-900 flex items-center gap-2">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-6 sm:mb-8 border border-slate-200">
+          <div className="p-4 sm:p-6 bg-slate-50 border-b border-slate-200">
+            <h3 className="text-base sm:text-xl font-semibold text-slate-900 flex items-center gap-2">
               👤 Local Avatar Generation Options
             </h3>
           </div>
-          <div className="overflow-x-auto">
+
+          {/* Mobile Card Layout */}
+          <div className="md:hidden p-4 space-y-3">
+            <div className="bg-purple-50 rounded-lg p-3 border border-purple-200">
+              <div className="flex justify-between items-start mb-2">
+                <span className="font-semibold text-slate-900">Stable Diffusion</span>
+                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Good</span>
+              </div>
+              <div className="space-y-1 text-xs text-slate-700">
+                <p><span className="text-slate-600 font-medium">Hardware:</span> 1x RTX 3080+</p>
+                <p><span className="text-green-700 font-bold">+</span> Customizable, local control</p>
+                <p><span className="text-red-700 font-bold">-</span> Static images</p>
+                <p className="text-indigo-700 font-medium">Best for: Avatar creation</p>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex justify-between items-start mb-2">
+                <span className="font-semibold text-slate-900">AnimatedDiff</span>
+                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Good</span>
+              </div>
+              <div className="space-y-1 text-xs text-slate-700">
+                <p><span className="text-slate-600 font-medium">Hardware:</span> 1x RTX 3090+</p>
+                <p><span className="text-green-700 font-bold">+</span> Animated expressions</p>
+                <p><span className="text-red-700 font-bold">-</span> Limited control</p>
+                <p className="text-indigo-700 font-medium">Best for: Simple movements</p>
+              </div>
+            </div>
+            <div className="bg-emerald-50 rounded-lg p-3 border border-emerald-200">
+              <div className="flex justify-between items-start mb-2">
+                <span className="font-semibold text-slate-900">ComfyUI</span>
+                <span className="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">Very Good</span>
+              </div>
+              <div className="space-y-1 text-xs text-slate-700">
+                <p><span className="text-slate-600 font-medium">Hardware:</span> 1x RTX 4070+</p>
+                <p><span className="text-green-700 font-bold">+</span> Workflow customization</p>
+                <p><span className="text-red-700 font-bold">-</span> Complex setup</p>
+                <p className="text-indigo-700 font-medium">Best for: Custom pipelines</p>
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <div className="flex justify-between items-start mb-2">
+                <span className="font-semibold text-slate-900">EMO</span>
+                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Good</span>
+              </div>
+              <div className="space-y-1 text-xs text-slate-700">
+                <p><span className="text-slate-600 font-medium">Hardware:</span> 1x RTX 3090+</p>
+                <p><span className="text-green-700 font-bold">+</span> Emotional expressions</p>
+                <p><span className="text-red-700 font-bold">-</span> Limited research model</p>
+                <p className="text-indigo-700 font-medium">Best for: Facial expressions</p>
+              </div>
+            </div>
+            <div className="bg-orange-50 rounded-lg p-3 border border-orange-200">
+              <div className="flex justify-between items-start mb-2">
+                <span className="font-semibold text-slate-900">Wav2Lip</span>
+                <span className="text-xs bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded">Moderate</span>
+              </div>
+              <div className="space-y-1 text-xs text-slate-700">
+                <p><span className="text-slate-600 font-medium">Hardware:</span> 1x RTX 3070+</p>
+                <p><span className="text-green-700 font-bold">+</span> Lip sync from audio</p>
+                <p><span className="text-red-700 font-bold">-</span> Quality issues</p>
+                <p className="text-indigo-700 font-medium">Best for: Basic lip movement</p>
+              </div>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
+              <div className="flex justify-between items-start mb-2">
+                <span className="font-semibold text-slate-900">SadTalker</span>
+                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Good</span>
+              </div>
+              <div className="space-y-1 text-xs text-slate-700">
+                <p><span className="text-slate-600 font-medium">Hardware:</span> 1x RTX 3080+</p>
+                <p><span className="text-green-700 font-bold">+</span> Head movement, expressions</p>
+                <p><span className="text-red-700 font-bold">-</span> Setup complexity</p>
+                <p className="text-indigo-700 font-medium">Best for: Talking head videos</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Table Layout */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full">
               <thead className="bg-slate-50">
                 <tr>
@@ -800,66 +1263,66 @@ export default function Architectures() {
         </div>
 
         {/* Hardware Configurations */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border border-slate-200">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-6 flex items-center gap-2">
+        <div className="bg-white rounded-xl shadow-lg p-4 sm:p-8 mb-6 sm:mb-8 border border-slate-200">
+          <h2 className="text-lg sm:text-2xl font-semibold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
             💻 Hardware Configurations for Different Scales
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             {/* Startup Tier */}
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200">
-              <h3 className="text-lg font-semibold text-slate-900 mb-4">Startup Tier</h3>
+            <div className="bg-linear-to-br from-green-50 to-emerald-50 rounded-lg p-4 sm:p-6 border border-green-200">
+              <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-4">Startup Tier</h3>
               <ul className="space-y-2 mb-4">
-                <li className="text-sm text-slate-700"><strong>CPU:</strong> Ryzen 9 7950X / i9-13900K</li>
-                <li className="text-sm text-slate-700"><strong>GPU:</strong> 2x RTX 4090 (24GB each)</li>
-                <li className="text-sm text-slate-700"><strong>RAM:</strong> 128GB DDR5</li>
-                <li className="text-sm text-slate-700"><strong>Storage:</strong> 4TB NVMe SSD</li>
+                <li className="text-xs sm:text-sm text-slate-700"><strong>CPU:</strong> Ryzen 9 7950X / i9-13900K</li>
+                <li className="text-xs sm:text-sm text-slate-700"><strong>GPU:</strong> 2x RTX 4090 (24GB each)</li>
+                <li className="text-xs sm:text-sm text-slate-700"><strong>RAM:</strong> 128GB DDR5</li>
+                <li className="text-xs sm:text-sm text-slate-700"><strong>Storage:</strong> 4TB NVMe SSD</li>
               </ul>
               <div className="border-t border-green-200 pt-4">
-                <p className="text-sm font-semibold text-green-700">Cost: $6,000-8,000</p>
-                <p className="text-sm text-slate-600">Capacity: 10-20 concurrent interviews</p>
+                <p className="text-xs sm:text-sm font-semibold text-green-700">Cost: $6,000-8,000</p>
+                <p className="text-xs sm:text-sm text-slate-600">Capacity: 10-20 concurrent interviews</p>
               </div>
             </div>
 
             {/* Mid-Scale Tier */}
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200">
-              <h3 className="text-lg font-semibold text-slate-900 mb-4">Mid-Scale Tier</h3>
+            <div className="bg-linear-to-br from-blue-50 to-indigo-50 rounded-lg p-4 sm:p-6 border border-blue-200">
+              <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-4">Mid-Scale Tier</h3>
               <ul className="space-y-2 mb-4">
-                <li className="text-sm text-slate-700"><strong>CPU:</strong> Dual AMD EPYC / Xeon</li>
-                <li className="text-sm text-slate-700"><strong>GPU:</strong> 4x RTX 4090 or 2x A100</li>
-                <li className="text-sm text-slate-700"><strong>RAM:</strong> 256GB DDR5</li>
-                <li className="text-sm text-slate-700"><strong>Storage:</strong> 8TB NVMe RAID</li>
+                <li className="text-xs sm:text-sm text-slate-700"><strong>CPU:</strong> Dual AMD EPYC / Xeon</li>
+                <li className="text-xs sm:text-sm text-slate-700"><strong>GPU:</strong> 4x RTX 4090 or 2x A100</li>
+                <li className="text-xs sm:text-sm text-slate-700"><strong>RAM:</strong> 256GB DDR5</li>
+                <li className="text-xs sm:text-sm text-slate-700"><strong>Storage:</strong> 8TB NVMe RAID</li>
               </ul>
               <div className="border-t border-blue-200 pt-4">
-                <p className="text-sm font-semibold text-blue-700">Cost: $20,000-30,000</p>
-                <p className="text-sm text-slate-600">Capacity: 40-60 concurrent interviews</p>
+                <p className="text-xs sm:text-sm font-semibold text-blue-700">Cost: $20,000-30,000</p>
+                <p className="text-xs sm:text-sm text-slate-600">Capacity: 40-60 concurrent interviews</p>
               </div>
             </div>
 
             {/* Enterprise Tier */}
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-6 border border-purple-200">
-              <h3 className="text-lg font-semibold text-slate-900 mb-4">Enterprise Tier</h3>
+            <div className="bg-linear-to-br from-purple-50 to-pink-50 rounded-lg p-4 sm:p-6 border border-purple-200">
+              <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-4">Enterprise Tier</h3>
               <ul className="space-y-2 mb-4">
-                <li className="text-sm text-slate-700"><strong>Setup:</strong> Multiple servers with load balancing</li>
-                <li className="text-sm text-slate-700"><strong>GPU:</strong> 8x A100 (80GB) or H100</li>
-                <li className="text-sm text-slate-700"><strong>RAM:</strong> 512GB+ per server</li>
-                <li className="text-sm text-slate-700"><strong>Storage:</strong> Distributed storage</li>
+                <li className="text-xs sm:text-sm text-slate-700"><strong>Setup:</strong> Multiple servers with load balancing</li>
+                <li className="text-xs sm:text-sm text-slate-700"><strong>GPU:</strong> 8x A100 (80GB) or H100</li>
+                <li className="text-xs sm:text-sm text-slate-700"><strong>RAM:</strong> 512GB+ per server</li>
+                <li className="text-xs sm:text-sm text-slate-700"><strong>Storage:</strong> Distributed storage</li>
               </ul>
               <div className="border-t border-purple-200 pt-4">
-                <p className="text-sm font-semibold text-purple-700">Cost: $100,000+</p>
-                <p className="text-sm text-slate-600">Capacity: 200+ concurrent interviews</p>
+                <p className="text-xs sm:text-sm font-semibold text-purple-700">Cost: $100,000+</p>
+                <p className="text-xs sm:text-sm text-slate-600">Capacity: 200+ concurrent interviews</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Integrated Local Architecture Example */}
-        <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl shadow-lg p-8 mb-8 border border-teal-200">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-4 flex items-center gap-2">
+        <div className="bg-linear-to-br from-teal-50 to-cyan-50 rounded-xl shadow-lg p-4 sm:p-8 mb-6 sm:mb-8 border border-teal-200">
+          <h2 className="text-lg sm:text-2xl font-semibold text-slate-900 mb-4 flex items-center gap-2">
             🏗️ Integrated Local Architecture Example
           </h2>
-          <div className="bg-white rounded-lg p-6 border border-teal-200">
-            <code className="text-sm text-slate-700 break-words block">
+          <div className="bg-white rounded-lg p-3 sm:p-6 border border-teal-200">
+            <code className="text-xs sm:text-sm text-slate-700 wrap-break-word block">
               User Request → FastAPI Server →<br/>
               &nbsp;&nbsp;├─ Llama 3 70B (8-bit) on vLLM [Interview Logic]<br/>
               &nbsp;&nbsp;├─ Phi-3 Medium on Ollama [Response Analysis]<br/>
@@ -868,17 +1331,17 @@ export default function Architectures() {
             </code>
           </div>
           <div className="mt-4">
-            <h3 className="text-lg font-semibold text-slate-900 mb-3">Smart Workload Distribution (Hybrid)</h3>
+            <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-3">Smart Workload Distribution (Hybrid)</h3>
             <ul className="space-y-2">
-              <li className="text-sm text-slate-700 flex items-start gap-2">
+              <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                 <span className="text-teal-500 mt-1">▸</span>
                 <span><strong>Local Models:</strong> Handle core interview logic, common questions</span>
               </li>
-              <li className="text-sm text-slate-700 flex items-start gap-2">
+              <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                 <span className="text-teal-500 mt-1">▸</span>
                 <span><strong>Cloud APIs:</strong> Manage peak loads, specialized tasks</span>
               </li>
-              <li className="text-sm text-slate-700 flex items-start gap-2">
+              <li className="text-xs sm:text-sm text-slate-700 flex items-start gap-2">
                 <span className="text-teal-500 mt-1">▸</span>
                 <span><strong>Caching:</strong> Store common responses for faster delivery</span>
               </li>
@@ -887,33 +1350,33 @@ export default function Architectures() {
         </div>
 
         {/* Summary */}
-        <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl shadow-lg p-8 border border-indigo-200">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-4 flex items-center gap-2">
+        <div className="bg-linear-to-br from-indigo-50 to-purple-50 rounded-xl shadow-lg p-4 sm:p-8 border border-indigo-200">
+          <h2 className="text-lg sm:text-2xl font-semibold text-slate-900 mb-4 flex items-center gap-2">
             💡 Key Takeaways
           </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3">
-              <span className="flex-shrink-0 w-6 h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
-              <span className="text-slate-700 pt-0.5">
+              <span className="shrink-0 w-5 h-5 sm:w-6 sm:h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xs sm:text-sm font-bold">1</span>
+              <span className="text-xs sm:text-sm text-slate-700 pt-0.5">
                 <strong>Start with Cloud-Based</strong> if you need rapid deployment and have budget for operational costs
               </span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="flex-shrink-0 w-6 h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-              <span className="text-slate-700 pt-0.5">
+              <span className="shrink-0 w-5 h-5 sm:w-6 sm:h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xs sm:text-sm font-bold">2</span>
+              <span className="text-xs sm:text-sm text-slate-700 pt-0.5">
                 <strong>Move to Hybrid</strong> as you scale to optimize costs while maintaining quality
               </span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="flex-shrink-0 w-6 h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-              <span className="text-slate-700 pt-0.5">
+              <span className="shrink-0 w-5 h-5 sm:w-6 sm:h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xs sm:text-sm font-bold">3</span>
+              <span className="text-xs sm:text-sm text-slate-700 pt-0.5">
                 <strong>Consider Self-Hosted</strong> only if data sovereignty is critical and you have the technical expertise
               </span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="flex-shrink-0 w-6 h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
-              <span className="text-slate-700 pt-0.5">
-                <strong>Choose orchestration tools</strong> based on your team's expertise and specific requirements
+              <span className="shrink-0 w-5 h-5 sm:w-6 sm:h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xs sm:text-sm font-bold">4</span>
+              <span className="text-xs sm:text-sm text-slate-700 pt-0.5">
+                <strong>Choose orchestration tools</strong> based on your team&apos;s expertise and specific requirements
               </span>
             </li>
           </ul>
