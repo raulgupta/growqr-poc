@@ -28,6 +28,7 @@ const navItems: NavItem[] = [
     children: [
       { label: "Agentic Frameworks", href: "/agentic-frameworks" },
       { label: "Possible POCs", href: "/pocs" },
+      { label: "Supabase", href: "/supabase" },
     ],
   },
   {
