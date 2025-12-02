@@ -39,6 +39,10 @@ const navItems: NavItem[] = [
     label: "Blueprint",
     href: "/blueprint",
   },
+  {
+    label: "Project Progress",
+    href: "/project-progress",
+  },
 ];
 
 function DropdownMenu({
