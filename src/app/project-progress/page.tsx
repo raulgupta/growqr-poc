@@ -293,6 +293,152 @@ export default function ProjectProgress() {
           </div>
         </div>
 
+        {/* Last Deployment on Hostinger */}
+        <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 mb-8">
+          <h3 className="text-lg font-semibold text-slate-900 mb-4">Last Deployment on Hostinger</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-3">
+              <div className="flex items-center gap-3">
+                <span className="text-sm font-medium text-slate-500 w-24">Server:</span>
+                <span className="text-sm text-slate-900 font-mono">srv1010446.hstgr.cloud</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-sm font-medium text-slate-500 w-24">Type:</span>
+                <span className="text-sm text-slate-900">KVM 4</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-sm font-medium text-slate-500 w-24">IP Address:</span>
+                <span className="text-sm text-slate-900 font-mono">168.231.122.11</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-sm font-medium text-slate-500 w-24">Expires:</span>
+                <span className="text-sm text-slate-900">2026-09-15</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-sm font-medium text-slate-500 w-24">Status:</span>
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">
+                  <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                  Running
+                </span>
+              </div>
+            </div>
+            <div className="flex justify-center md:justify-end">
+              <a
+                href="/bugs/deployment.JPG"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block rounded-lg overflow-hidden border border-slate-200 hover:border-indigo-300 transition-colors max-w-[300px]"
+              >
+                <Image
+                  src="/bugs/deployment.JPG"
+                  alt="Hostinger VPS deployment screenshot"
+                  width={300}
+                  height={200}
+                  className="w-full h-auto hover:opacity-90 transition-opacity"
+                />
+                <div className="px-3 py-2 bg-slate-50 text-xs text-slate-600 text-center">
+                  Click to view full image
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Meeting Notes - Hiramb Mishra */}
+        <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 mb-8">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-6">
+            <h3 className="text-lg font-semibold text-slate-900">Meeting Notes</h3>
+            <div className="flex items-center gap-2">
+              <span className="text-sm text-slate-500">With:</span>
+              <span className="text-sm font-medium text-slate-900">Hiramb Mishra</span>
+              <span className="text-slate-300">|</span>
+              <span className="text-sm text-slate-500">December 4, 2025</span>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            {/* Point 1 - API Failures */}
+            <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+              <div className="flex items-start gap-3">
+                <span className="shrink-0 w-6 h-6 bg-red-500 text-white rounded-full flex items-center justify-center text-xs font-bold">1</span>
+                <div className="flex-1">
+                  <p className="text-sm text-slate-800 font-medium mb-3">
+                    Consistent API failures have been noticed at multiple endpoints. Services failing:
+                  </p>
+                  <ul className="text-sm text-slate-700 space-y-1 mb-4">
+                    <li className="flex items-center gap-2">
+                      <span className="text-red-400">•</span>
+                      <code className="px-1.5 py-0.5 bg-red-100 rounded text-xs">resume-parser</code>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-red-400">•</span>
+                      <code className="px-1.5 py-0.5 bg-red-100 rounded text-xs">analyze-linkedin-api</code>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-red-400">•</span>
+                      <code className="px-1.5 py-0.5 bg-red-100 rounded text-xs">cover-letter-api</code>
+                    </li>
+                  </ul>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <a href="/bugs/resume-parsing-api.png" target="_blank" rel="noopener noreferrer" className="block">
+                      <Image src="/bugs/resume-parsing-api.png" alt="Resume Parser API Error" width={200} height={120} className="w-full h-auto rounded border border-red-200 hover:opacity-90 transition-opacity" />
+                      <span className="text-xs text-slate-500 mt-1 block">Resume Parser</span>
+                    </a>
+                    <a href="/bugs/analyze-linkedin-api.png" target="_blank" rel="noopener noreferrer" className="block">
+                      <Image src="/bugs/analyze-linkedin-api.png" alt="LinkedIn API Error" width={200} height={120} className="w-full h-auto rounded border border-red-200 hover:opacity-90 transition-opacity" />
+                      <span className="text-xs text-slate-500 mt-1 block">LinkedIn API</span>
+                    </a>
+                    <a href="/bugs/cover-letter-api.png" target="_blank" rel="noopener noreferrer" className="block">
+                      <Image src="/bugs/cover-letter-api.png" alt="Cover Letter API Error" width={200} height={120} className="w-full h-auto rounded border border-red-200 hover:opacity-90 transition-opacity" />
+                      <span className="text-xs text-slate-500 mt-1 block">Cover Letter API</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Point 2 - Guidance */}
+            <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg">
+              <div className="flex items-start gap-3">
+                <span className="shrink-0 w-6 h-6 bg-amber-500 text-white rounded-full flex items-center justify-center text-xs font-bold">2</span>
+                <p className="text-sm text-slate-800">
+                  <span className="font-medium">Guidance from Hiramb:</span> Suggested to start a fresh backend project from scratch.
+                </p>
+              </div>
+            </div>
+
+            {/* Point 3 - Out of Scope */}
+            <div className="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+              <div className="flex items-start gap-3">
+                <span className="shrink-0 w-6 h-6 bg-slate-500 text-white rounded-full flex items-center justify-center text-xs font-bold">3</span>
+                <p className="text-sm text-slate-800">
+                  Other glitches and bugs reported as <span className="font-medium text-orange-600">UAT bugs</span> — help with bug fixes and documentation reported as <span className="font-medium text-red-600">out of scope</span> for him.
+                </p>
+              </div>
+            </div>
+
+            {/* Point 4 - Documentation */}
+            <div className="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+              <div className="flex items-start gap-3">
+                <span className="shrink-0 w-6 h-6 bg-slate-500 text-white rounded-full flex items-center justify-center text-xs font-bold">4</span>
+                <p className="text-sm text-slate-800">
+                  Addressed issues with <span className="font-medium">lack of documentation</span> on the current codebase — also reported as <span className="font-medium text-red-600">out of scope</span> for him.
+                </p>
+              </div>
+            </div>
+
+            {/* Point 5 - Timeline */}
+            <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+              <div className="flex items-start gap-3">
+                <span className="shrink-0 w-6 h-6 bg-red-600 text-white rounded-full flex items-center justify-center text-xs font-bold">5</span>
+                <p className="text-sm text-slate-800">
+                  <span className="font-medium text-red-700">Feb-March product delivery reported as unfeasible</span> by him — with no feature ready with end-to-end compliance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Legend */}
         <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200">
           <h3 className="text-lg font-semibold text-slate-900 mb-4">Progress Legend</h3>
