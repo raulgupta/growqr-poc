@@ -21,6 +21,8 @@ const navItems: NavItem[] = [
       { label: "GenAI Architectures", href: "/architectures" },
       { label: "Tech Architecture", href: "/tech-architecture" },
       { label: "AI-Infra", href: "/ai-infra" },
+      { label: "Laravel Data Mapping", href: "/laravel-data-mapping" },
+      { label: "Laravel API Mapping", href: "/laravel-api-mapping" },
     ],
   },
   {
