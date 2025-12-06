@@ -13,7 +13,7 @@ export default function USP() {
             <strong>Tagline:</strong> One Career. One Score. One QR.
           </p>
           <p className="text-base text-slate-700 leading-relaxed">
-            GrowQR is the world's first AI-powered Career Operating System that maintains a continuously evolving digital twin for every professional.
+            GrowQR is the world&apos;s first AI-powered Career Operating System that maintains a continuously evolving digital twin for every professional.
             The platform combines four enterprise-grade capabilities into a single, unified experience.
           </p>
         </div>
@@ -26,7 +26,7 @@ export default function USP() {
               <h3 className="text-lg font-semibold text-slate-900 mb-3">Dynamic Document Generation</h3>
               <p className="text-sm text-slate-700">
                 Real-time, ATS-optimized résumés, cover letters, and executive bios generated from a living knowledge graph
-                of the user's experience, achievements, and market signaling data.
+                of the user&apos;s experience, achievements, and market signaling data.
               </p>
             </div>
             <div className="bg-linear-to-br from-purple-50 to-pink-50 rounded-lg p-6 border border-purple-200">
@@ -283,7 +283,7 @@ export default function USP() {
                   One permanent QR code (printed on business cards, embedded in email signatures, LinkedIn banners, conference badges,
                   or even NFC chips) that, when scanned by any smartphone or badge reader, instantly renders the absolute latest version
                   of your résumé, a 60-second video intro, a mobile-optimized Hero Card, current availability status, and the Q-Score (0–100).
-                  No more "here's my old PDF" embarrassment — the recipient always sees you at your peak, updated hourly.
+                  No more &quot;here&apos;s my old PDF&quot; embarrassment — the recipient always sees you at your peak, updated hourly.
                 </p>
               </div>
             </div>
@@ -362,7 +362,7 @@ export default function USP() {
                   </li>
                   <li className="text-xs text-slate-700 flex items-start gap-2">
                     <span className="text-purple-500 mt-1">▸</span>
-                    <span>Versioned "career DNA" allows rollback and diff</span>
+                    <span>Versioned &quot;career DNA&quot; allows rollback and diff</span>
                   </li>
                 </ul>
               </div>
@@ -529,7 +529,7 @@ export default function USP() {
           <h2 className="text-2xl font-semibold text-white mb-4">Positioning Statement</h2>
           <p className="text-base text-slate-200 leading-relaxed mb-4">
             Designed from the ground up as a privacy-first, user-owned system, GrowQR never sells personal data.
-            All career artifacts remain under the individual's control, and the QR can be configured for full, partial, or time-bound disclosure.
+            All career artifacts remain under the individual&apos;s control, and the QR can be configured for full, partial, or time-bound disclosure.
           </p>
           <p className="text-base text-slate-200 leading-relaxed mb-4">
             In practice, GrowQR transforms career development from a periodic, anxiety-driven exercise into a continuous, measurable,
